@@ -1,6 +1,6 @@
 <?php
 
-namespace Mako\CustomTableCard;
+namespace Jbworld\CustomTableCard;
 
 use Laravel\Nova\Card;
 
@@ -15,7 +15,7 @@ class CustomTableCard extends Card
      */
     public $width = 'full';
 
-    public function __construct(array $header = [], array $data = [], string $title = '', array $viewall = [])
+    public function __construct(array $header = [], array $footer = [], array $data = [], string $title = '', array $viewall = [])
     {
         parent::__construct();
 
@@ -23,6 +23,7 @@ class CustomTableCard extends Card
 
         $this->withMeta([
             'header'    =>  $this->_convertToArray($header),
+            'footer'    =>  $this->_convertToArray($footer),
             'rows'      =>  $this->_convertToArray($data),
             'title'     =>  $title,
             'viewall'   =>  $viewall,
@@ -32,6 +33,11 @@ class CustomTableCard extends Card
     public function header(array $header)
     {
         return $this->withMeta(['header' => $this->_convertToArray($header)]);
+    }
+
+    public function footer(array $footer)
+    {
+        return $this->withMeta(['footer' => $this->_convertToArray($footer)]);
     }
 
     public function data(array $data)

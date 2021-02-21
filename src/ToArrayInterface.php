@@ -1,6 +1,6 @@
 <?php
 
-namespace Mako\CustomTableCard;
+namespace Jbworld\CustomTableCard;
 
 interface ToArrayInterface
 {

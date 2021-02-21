@@ -1,8 +1,8 @@
 <?php
 
-namespace Mako\CustomTableCard\Table;
+namespace Jbworld\CustomTableCard\Table;
 
-use Mako\CustomTableCard\ToArrayInterface;
+use Jbworld\CustomTableCard\ToArrayInterface;
 
 class Cell implements ToArrayInterface
 {

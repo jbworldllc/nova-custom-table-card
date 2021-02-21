@@ -1,6 +1,6 @@
 <?php
 
-namespace Mako\CustomTableCard;
+namespace Jbworld\CustomTableCard;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;

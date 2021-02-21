@@ -27,6 +27,16 @@
           </td>
         </tr>
       </tbody>
+      <tfoot v-if="footer && footer.length > 0">
+        <tr>
+          <th v-for="(foot, index) in footer" :key="index" :class="head.class" :id="foot.id">
+            <span class="cursor-pointer inline-flex items-center">
+              {{ foot.data }}
+            </span>
+          </th>
+          <th v-if="hasViewColumn"></th>
+        </tr>
+      </tfoot>
     </table>
     <div v-if="viewall" class="bg-20 rounded-b-lg flex justify-between">
       <div></div>
@@ -51,6 +61,7 @@ export default {
         return {
             rows: [],
             header: [],
+            footer: [],
             title: '',
             viewall: false,
         }
@@ -63,8 +74,9 @@ export default {
     methods: {
         fillTableData(card) {
             this.rows = card.rows;
-            this.header = card.header;
+            // this.header = card.header;
             this.title = card.title;
+            this.footer = card.footer;
             this.viewall = card.viewall;
         }
     },
