@@ -1,8 +1,8 @@
 <?php
 
-namespace Jbworld\CustomTableCard\Table;
+namespace Jbworldllc\CustomTableCard\Table;
 
-use Jbworld\CustomTableCard\ToArrayInterface;
+use Jbworldllc\CustomTableCard\ToArrayInterface;
 
 class Cell implements ToArrayInterface
 {
