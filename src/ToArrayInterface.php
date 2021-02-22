@@ -1,6 +1,6 @@
 <?php
 
-namespace Jbworld\CustomTableCard;
+namespace Jbworldllc\CustomTableCard;
 
 interface ToArrayInterface
 {

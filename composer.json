@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Jbworld\\CustomTableCard\\": "src/"
+            "Jbworldllc\\CustomTableCard\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Jbworld\\CustomTableCard\\CardServiceProvider"
+                "Jbworldllc\\CustomTableCard\\CardServiceProvider"
             ]
         }
     },
